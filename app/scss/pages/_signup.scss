@@ -1,0 +1,111 @@
+.signup {
+	padding: 20px 0 95px;
+	@media only screen and (max-width: $md) {
+		padding-top: 10px 0 60px;
+	}
+	.wrapper {
+		@media only screen and (max-width: $md) {
+			padding:  0 50px;
+		}
+	}
+	.heading-primary {
+		@extend %set-heading;
+		&:after {
+			content: attr(data-heading);
+			font-size: 165px;
+			text-align: left;
+			line-height: 165px;
+			color: rgba($gray, .3);
+			position: absolute;
+			left: 0;
+			top: -36px;
+			z-index: -1;
+			@media only screen and (max-width: $md) {
+				display: none;
+			}
+		}
+		@media only screen and (max-width: $md) {
+			font-size: 50px;
+			margin-bottom: 20px;
+		}
+	}
+	.sidebar__links {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 52px;
+	}
+	.contact__info {
+		height: auto;
+	}
+	.contact__form {
+		margin-bottom: 0;
+		padding: 55px;
+		@media only screen and (max-width: $sm) {
+			padding: 20px;
+		}
+	}
+	.contact__form-heading {
+		margin-bottom: 9px;
+	}
+	.contact__form-heading::after {
+		font-size: 60px;
+		top: -14px;
+	}
+	.heading-secondary:after {
+		line-height: 54px;
+	}
+}
+
+.signup__heading {
+	font-size: 60px !important;
+	line-height: 70px;
+	margin-bottom: 85px;
+	&:after {
+		font-size: 165px;
+	}
+}
+
+.form-control {
+	margin-bottom: 18px;
+	position: relative;
+	input {
+		border: 2px solid transparent;
+		border-radius: 4px;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		font-size: 14px;
+		&:focus {
+			outline: 0;
+			border-color: $white;
+		}
+	}
+	&.success input {
+		border-color: green;
+	}
+	&.error input {
+		border-color: red;
+	}
+	small {
+		color: red;
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		visibility: hidden;
+	}
+	&.error.small {
+		visibility: visible;
+	}
+}
+
+.signup-form__checkbox {
+	justify-content: space-between;
+	margin-bottom: 30px;
+	@media only screen and (max-width: 1600px) {
+		flex-direction: column;
+	}
+}
+
+.signup__login {
+	text-align: center;
+}

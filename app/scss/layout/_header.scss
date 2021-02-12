@@ -1,0 +1,104 @@
+.header {
+	padding: 30px 0 27px 2px;
+	@media only screen and (max-width: $md) {
+		padding: 25px 0 35px 0;
+	}
+	@media only screen and (max-width: $md) {
+		padding: 25px 0 15px 0;
+	}
+}
+
+.header--dark {
+	background-color: $brown;
+	padding: 50px 0 48px 67px;
+	@media only screen and (max-width: $md) {
+		padding: 50px 20px 48px 67px;
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 30px;
+	}
+	.wrap {
+		margin: 0;
+	}
+	#toggleIcon {
+		@media only screen and (max-width: $md) {
+			top: 25px;
+			right: 67px;
+		}
+		@media only screen and (max-width: $sm) {
+			top: 30px;
+			right: 30px;
+		}
+	}
+}
+
+.header__container {
+	@extend %set-flex;
+}
+
+.header__container-left {
+	@extend %set-flex;
+}
+
+.header__logo-img {
+	width: 160px;
+	margin-right: 117px;
+}
+
+.header__container-right {
+	@media only screen and (max-width: $between) {
+		display: none;
+	}
+}
+
+.header--alternative {
+	background-color: transparent;
+	position: absolute;
+	z-index: 100;
+	max-width: 1409px;
+	padding: 51px 0 28px 66px;
+	@media only screen and (min-width: $lg) {
+		width: 100%;
+	}
+	.header__logo {
+		display: none;
+	}
+}
+
+.nav {
+	@media only screen and (max-width: $md-large) {
+		display: none;
+	}
+}
+
+.nav__list {
+	display: flex;
+}
+
+.nav__item {
+	&:not(:last-child) {
+		padding-right: 48px;
+	}
+	@media only screen and (min-width: $md-large) {
+		&:not(:last-child) {
+			padding-right: 20px;
+		}
+	}
+}
+
+.nav__link {
+	color: $white;
+	padding-bottom: 10px;
+	font-size: 14px;
+	&:hover {
+		border-bottom: 2px solid $orange;
+		transition: all .3 ease-in-out;
+	}
+	@media only screen and (max-width: $md-large) {
+		font-size: 12px;
+	}
+}
+
+
+
+

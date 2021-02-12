@@ -1,0 +1,24 @@
+.blog--space {
+	margin-bottom: 30px;
+}
+
+.blog__pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.blog__pagination-numbers {
+	padding: 0 12px;
+}
+
+.blog__pagination-number {
+	display: inline-block;
+	font-weight: bold;
+	padding: 2px 4px;
+	margin-right: 5px;
+	&:hover {
+		background-color: $orange;
+		color: $white;
+	}
+}

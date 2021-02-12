@@ -1,0 +1,80 @@
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	transition: .4s ease-out;
+	height: 38px;
+	padding: 10px;
+}
+
+.btn-main {
+	background-color: $orange;
+	color: $white;
+	@include border-radius(5px);
+	&:hover {
+		background-color: $white;
+		color: $orange;
+	}
+}
+
+.btn-secondary {
+	background-color: $white;
+	color: $black;
+	@include border-radius(5px);
+	&:hover {
+		background-color: $brown;
+		color: $white;
+	}
+}
+
+.btn-product {
+	background-color: $orange;
+	color: $white;
+	&:hover {
+		background-color: $white;
+		color: $orange;
+		border: 1px solid $orange;
+		transition: all .5 ease-in;
+	}
+}
+
+.btn-hero {
+	margin-bottom: 145px;
+	@media only screen and (max-width: $sm) {
+		margin-bottom: 50px;
+	}
+}
+
+.btn-search {
+	position: absolute;
+	right: 0;
+	background-color: $orange;
+	height: 43px;
+	color: $white;
+	font-weight: bold;
+	padding: 0 10px;
+	&:hover {
+		background-color: $brown;
+
+	}
+}
+
+.btn-item {
+	position: absolute;
+	color: $white;
+	font-weight: bold;
+	padding: 10px;
+	background-color: rgba($brown, .5);
+	@include border-radius(5px);
+	@include absolute-center();
+}

@@ -1,0 +1,39 @@
+.numbers {
+	padding: 50px 0;
+	&__box {
+		text-align: center;
+		position: relative;
+		border-right: 1px solid $gray;
+		@media only screen and (max-width: $md) {
+			margin-bottom: 50px;
+			border-right: 0;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $gray;
+			.span-1-of-3 {
+				width: 100%;
+			}
+		}
+		&-title {
+			color: $orange;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+	}
+	&__num {
+		display: inline-block;
+		font-size: 60px;
+		line-height: 70px;
+		color: $brown;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 7px;
+	}
+	&--models {
+		padding: 77px 0 !important;
+		@media only screen and (max-width: $md) {
+			padding: 15px 0 !important;
+		}
+	}
+}
+
+

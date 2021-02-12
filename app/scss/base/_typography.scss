@@ -1,0 +1,159 @@
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.heading-primary {
+	@extend %set-heading;
+	margin-bottom: 20px;
+	&:after {
+		content: attr(data-heading);
+		font-size: 170px;
+		text-align: left;
+		line-height: 200px;
+		color: rgba(#CFCFCF, .3);
+		position: absolute;
+		left: 0;
+		top: -120px;
+		@media only screen and (max-width: $between) {
+			display: none;
+		}
+	}
+	@media only screen and (max-width: $md) {
+		font-size: 70px;
+	}
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+		font-size: 30px;
+		line-height: 60px;
+	}
+}
+
+.heading-secondary {
+	@extend %set-heading;
+	&:after {
+		content: attr(data-heading);
+		font-size: 257px;
+		text-align: left;
+		line-height: 236px;
+		color: rgba($white, .3);
+		position: absolute;
+		left: 0;
+		top: -120px;
+		@media only screen and (max-width: $between) {
+			display: none;
+		}
+		@media only screen and (max-width: $lg) {
+			font-size: 200px;
+		}
+	}
+	@media only screen and (max-width: $md) {
+		font-size: 65px;
+	}
+}
+
+.heading-reverse {
+	font-size: 60px;
+	line-height: 70px;
+	color: $brown;
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+	margin-bottom: 20px;
+	&:after {
+		content: attr(data-heading);
+		font-size: 150px;
+		line-height: 165px;
+		color: rgba($gray, .3);
+		position: absolute;
+		left: 0;
+		top: -80px;
+		z-index: -1;
+		@media only screen and (max-width: $between) {
+			font-size: 100px;
+		}
+		@media only screen and (max-width: $md) {
+			display: none;
+		}
+	}
+	@media only screen and (max-width: $md) {
+		display: block;
+		text-align: center;
+	}
+	@media only screen and (max-width: $sm) {
+		font-size: 40px;
+	}
+}
+
+.heading-center {
+	&:after {
+		content: attr(data-heading);
+		font-size: 120px;
+		color: rgba(#CFCFCF, .2);
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		@media only screen and (max-width: $md) {
+			display: none;
+		}
+	}
+}
+
+.h1 {
+	font-size: 40px;
+	font-family: $font-primary;
+	font-weight: $weight-normal;
+	line-height: 50px;
+	letter-spacing: 0;
+	opacity: 1;
+}
+
+.h2 {
+	color: $brown;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: left;
+	@media only screen and (max-width: $md) {
+		font-size: 40px;
+		line-height: 40px;
+	}
+}
+
+h4, .h4 {
+	color: $orange;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	margin-bottom: 18px;
+	line-height: 20px;
+	@media only screen and (max-width: $md) {
+		text-align: center;
+	}
+}
+
+h5, .h5 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	color: $brown;
+	margin-bottom: 40px;
+}
+
+h6, .h6 {
+	color: $orange;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	font-weight: 500;
+	margin-bottom: 13px;
+	@media only screen and (max-width: $md) {
+		margin: 20px 0;
+	}
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+
+

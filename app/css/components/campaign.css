@@ -1,0 +1,16 @@
+.campaign {
+  position: relative;
+  padding: 100px 0; }
+
+.campaign__item {
+  width: 1268px;
+  height: 340px;
+  border-radius: 10px; }
+  .campaign__item:not(:last-child) {
+    margin-bottom: 30px; }
+  .campaign__item:first-child {
+    background-image: url("../images/campaign1.png"); }
+
+.campaign__item-title,
+.campaign__item-year {
+  visibility: hidden; }

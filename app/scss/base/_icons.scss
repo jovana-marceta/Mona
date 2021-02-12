@@ -1,0 +1,56 @@
+.header-icon {
+	color: $white;
+	padding-left: 52px;
+	&:hover {
+		color: $orange;
+	}
+}
+
+.icon-social {
+	color: $white;
+	font-size: 17px;
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+	&:hover {
+		color: $orange;
+	}
+	@media only screen and (max-width: $sm) {
+		font-size: 30px;
+	}
+}
+
+.hero__social-icon {
+	color: $white;
+	display: block;
+	font-size: 20px;
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&:hover {
+		color: $orange;
+		transition: all .2s ease-in;
+	}
+}
+
+
+.icon-quote {
+	color: $orange;
+	font-size: 26px;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.hero-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&:hover {
+		color: $orange;
+	}
+}
+

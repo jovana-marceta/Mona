@@ -1,0 +1,262 @@
+.product {
+	padding: 50px 0 100px;
+	padding-bottom: 100px;
+	@media only screen and (min-width: $md) {
+		padding: 50px;
+	}
+	@media only screen and (min-width: $sm) {
+		padding: 50px 20px;
+	}
+}
+
+.product-logo {
+	width: 100px;
+	@media only screen and (min-width: $md) {
+		display: none;
+	}
+}
+
+.product__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product__box-price {
+	color: $orange;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.product__box--first {
+	width: 40%;
+	margin-bottom: 30px;
+	@media (max-width: 1700px) {
+		display: none;
+	}
+}
+.product__box--second {
+	width: 60%;
+	@media (max-width: 1700px) {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	@media only screen and (max-width: $md) {
+		order: 3;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+.product__box--third {
+	width: 40%;
+	@media (max-width: 1700px) {
+		display: none;
+	}
+}
+.product__box--fourth {
+	width: 60%;
+	@media (max-width: 1700px) {
+		width: 100%;
+	}
+	@media only screen and (max-width: $md) {
+		order: 4;
+		width: 100%;
+	}
+}
+
+
+.product__choice {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.product__choice-border {
+	border: 1px solid $orange;
+	padding: 2px 10px;
+	border-radius: 3px;
+}
+
+.product__choice-title {
+	color: $brown;
+	font-weight: bold;
+	margin-right: 47px;
+}
+
+.product__choice-sizebox {
+	background-color: $white;
+	color: $orange;
+	padding: 5px;
+	&:hover {
+		background-color: $orange;
+		color: $white;
+	}
+}
+
+.product-color-square {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-color: #F5F5DC;
+	@include border-radius(2px);
+	margin-bottom: 10px;
+	&:nth-child(3) {
+		background-color: #72CEDC;
+	}
+	&:last-of-type {
+		background-color: #E1D58B;	
+	}
+}
+
+.product__info {
+	padding: 50px;
+	@include border-radius(10px);
+	@media only screen and (max-width: $md) {
+		padding: 20px;
+	}
+}
+.product__info-title {
+	color: $brown;
+	font-weight: bold;
+	@media only screen and (max-width: $md) {
+		text-align: left;
+	}
+}
+.white {
+	color: $white;
+}
+
+.product__places {
+	background-color: $white;
+	@include border-radius(10px);
+	padding: 20px;
+}
+.product__places-row {
+	border-bottom: 1px solid $gray;
+	padding-bottom: 20px;
+}
+
+.product__ino-left,
+.product__ino-right {
+	@media only screen and (max-width: $sm) {
+		margin-right: 15px;
+	}
+}
+
+.product__line {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-top: 1px solid $white;
+}
+.product__line-space {
+	display: inline-block;
+	@include border-radius(20px);
+	margin-right: 20px;
+}
+
+.product__img {
+	width: 198px;
+	height: 380px;
+	@media only screen and (max-width: $md) {
+		width: 150px;
+	}
+}
+
+.product__box-table {
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: $sm) {
+		flex-direction: column;
+	}
+}
+
+.product__line-box {
+	margin-right: 30px;
+	@media only screen and (max-width: $md) {
+		margin-right: 0;
+	}
+}
+
+.product__sizes {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.product__background {
+	@media only screen and (max-width: $md) {
+		width: 300px;
+	}
+	@media only screen and (max-width: $sm) {
+		width: 130px;
+	}
+}
+
+.product__info-title--white {
+	color: $white;
+	@media only screen and (max-width: $md) {
+		text-align: left;
+	}
+}
+
+
+.product-slider-container {
+	@media (min-width: 1750px)  {
+		display: none;
+	}
+}
+
+
+.product-slider {
+	width: 100%;
+	.slick-custom-arrow {
+		color: $black;
+	}
+	.slick-dots button {
+		border: 1px solid $black;
+	}
+	.slick-dots li.slick-active button {
+		background-color: $black;
+	}
+	.slick-custom-arrow-right {
+		left: 100%;
+		right: 0;
+	}
+	.slick-dots {
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+
+.product-simmilar-slider {
+	.slick-slide  {
+		width: 300px;
+		@media only screen and (min-width: 450px) {
+			width: 100%;
+		}
+	}
+	.slick-custom-arrow {
+		color: $black;
+	}
+	.slick-dots button {
+		border: 1px solid $black;
+	}
+	.slick-dots li.slick-active button {
+		background-color: $black;
+	}
+	.slick-custom-arrow-right {
+		left: 100%;
+		right: 0;
+	}
+	.slick-dots {
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	@media only screen and (min-width: $sm) {
+		display: none;
+	}
+}
+
+

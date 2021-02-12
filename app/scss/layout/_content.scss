@@ -1,0 +1,11 @@
+#main-content {
+	display: flex;
+	align-items: flex-start;
+}
+
+.content {
+	width: calc(100% - 353px);
+	@media only screen and (max-width: $md) {
+		width: 100%;
+	}
+}

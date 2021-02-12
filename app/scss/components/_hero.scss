@@ -1,0 +1,41 @@
+.hero {
+	@extend %bg-image;
+	padding-top: 260px;
+	@media only screen and (max-width: $md) {
+		padding-top: 200px;
+	}
+	@media only screen and (max-width: $sm) {
+		padding-top: 100px;
+	}
+	.wrap {
+		padding-left: 66px;
+		@media only screen and (min-width: $lg) {
+			padding: 0;
+		}
+		@media only screen and (max-width: $md) {
+			padding: 0 20px;
+		}
+	}
+	&__text {
+		margin-bottom: 40px;
+		width: 387px;
+		@media only screen and (max-width: $sm) {
+			width: 100%;
+		}
+	}
+}
+
+.hero__social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	right: 150px;
+	bottom: 30px;
+	@media only screen and (max-width: $md) {
+		display: none;
+	}
+}
+
+
+

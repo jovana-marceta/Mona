@@ -1,0 +1,22 @@
+%bg-image {
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	left: 0;
+	top: 0
+}
+
+%set-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+%set-heading {
+	font-size: 90px;
+	line-height: 100px;
+	text-align: left;
+	position: relative;
+}

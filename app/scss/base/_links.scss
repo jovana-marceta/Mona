@@ -1,0 +1,80 @@
+.sidenav-link {
+	font-size: 10px;
+	line-height: 15px;
+	color: $brown-light;
+	&--active {
+		color: $orange;
+	}
+}
+
+.banner-link {
+	font-size: 10px;
+	color: $white;
+	line-height: 15px;
+	text-align: left;
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+.campaign-link {
+	color: $white;
+	position: relative;
+	z-index: 100;
+	font-weight: bold;
+	&:hover {
+		background-color: $orange;
+		padding: 10px 20px;
+		transition: all .5s ease-in-out;
+	}
+}
+
+.blog-link {
+	color: $orange;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 20px;
+	&:hover {
+		background-color: $orange;
+		color: $white;
+		transition: all .3 ease-in-out;
+	}
+}
+
+.footer__links {
+	display: inline-block;
+	color: $white;
+	line-height: 20px;
+	text-align: left;
+}
+
+.footer__links:hover {
+	color: $orange;
+	text-decoration: underline;
+}
+
+.collection-link {
+	color: $white;
+	font-weight: bold;
+	margin-right: 5px;
+	position: relative;
+	z-index: 200;
+	span {
+		margin-right: 5px;
+	}
+	&:hover {
+		background-color: $orange;
+		padding: 5px 10px;
+	}
+}
+
+.link-see-more {
+	color: $white;
+	background-color: rgba($brown, .5);
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px;
+	@include border-radius(5px);
+	@include  absolute-center();
+}

@@ -1,0 +1,50 @@
+.js-slider {
+	width: 388px;
+	margin-left: 0;
+	position: relative;
+	@media only screen and (max-width: $sm) {
+		width: 300px;
+	}
+}
+
+.js-slider__img {
+	width: 388px;
+	height: 273px;
+	@include border-radius(10px);
+}
+
+.slick-custom-arrow {
+	color: $white;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+.slick-custom-arrow-right {
+	position: absolute;
+	top: 0;
+	left: 140px;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	position: absolute;
+	top: 3px;
+	left: 40px;
+	li {
+		margin-right: 15px;
+	}
+	button {
+		display: block;
+		width: 10px;
+		height: 10px;
+		padding: 0;
+		border: 1px solid $white;
+		border-radius: 100%;
+		text-indent: -9999px;
+	}
+	li.slick-active button {
+		background-color: $white;
+	}
+}

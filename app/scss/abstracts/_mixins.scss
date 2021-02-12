@@ -1,0 +1,21 @@
+@mixin absolute-center() {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+
+@mixin border-radius($pixel) {
+	border-radius: $pixel;
+}
+
+@each $colors-name in $site-colors {
+	$name: nth($colors-name, 1);
+	$color: nth($colors-name, 2);
+	.bg-#{$name} {
+		background-color: $color;
+	}
+	.color-#{$name} {
+		color: $color;
+}
+}

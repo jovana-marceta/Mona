@@ -1,0 +1,50 @@
+body {
+	font-size: 14px;
+	font-family: $font-primary;
+	color: $brown;
+}
+
+.row {
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.wrap {
+	max-width: 1402px;
+	width: 100%;
+	margin: 0 auto;
+	@media only screen and (max-width: $md) {
+		padding: 0 25px
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 0 15px;
+	}
+}
+
+.wrap-form {
+	max-width: 1603px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+	@media only screen and (max-width: $md) {
+		padding: 0 25px
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 0 15px;
+	}
+}
+
+.wrapper{
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 134px 0 141px;
+	@media only screen and (max-width: $md) {
+		padding: 0 100px;
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 0 30px;
+	}
+}
+

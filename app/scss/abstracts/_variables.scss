@@ -1,0 +1,36 @@
+// Fonts
+$font-primary: 'Montserrat', sans-serif;
+
+// Fonts weight
+$weight-normal: normal;
+
+// Widths
+$lg: 1920px;
+$between: 1400px;
+$md-large: 1200px;
+$md: 1025px;
+$sm: 576px;
+
+
+// Colors
+$black: #000;
+$white: #fff;
+$silver: #F3F3F3;
+$gray: #CFCFCF;
+$brown:#3E3D3D;
+$brown-light: #6A5964;
+$orange: #E6AF91;
+$overlay-color: #3E3D3D;
+
+$site-colors: (
+	'black': $black,
+	'white': $white,
+	'silver': $silver,
+	'gray': $gray,
+	'brown': $brown,
+	'orange': $orange
+) !default;
+
+
+
+

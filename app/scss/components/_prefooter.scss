@@ -1,0 +1,31 @@
+.prefooter {
+	position: relative;
+	padding: 55px 0 52px;
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+.prefooter__title {
+	color: $white;
+	margin-bottom: 20px;
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+.prefooter__text {
+	margin-bottom: 50px;
+}
+
+.prefooter__transparent {
+	color: rgba($white, .3);
+	font-weight: bold;
+	position: absolute;
+	right: 483px;
+	top: 0%;
+	font-size: 130px;
+	@media only screen and (max-width: $sm) {
+		display: none;
+	}
+}

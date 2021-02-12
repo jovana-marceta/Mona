@@ -1,0 +1,135 @@
+.item {
+	padding: 100px 0;
+	&:not(:first-child) {
+		padding: 100px 0 0;
+	}
+	@media only screen and (max-width: $md) {
+		padding: 50px 0;
+	}
+
+	.slick-custom-arrow {
+		color: $brown;
+	}
+	
+	.slick-dots button {
+		border: 1px solid $brown;
+	}
+
+	.slick-custom-arrow-right {
+		right: 0;
+		left: 100%;
+	}
+
+	.slick-dots {
+		left: 50%;
+		transform:translate(-50%,-50%);
+	}
+
+	li.slick-active button  {
+		background-color: $brown;
+	}
+}
+
+.item__date {
+	display: block;
+}
+.item__heading {
+	margin-bottom: 30px;
+}
+
+.item__heading,
+.item__date {
+	text-align: center;
+}
+
+.item__container {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	.item__container-left{
+		position: relative;
+		opacity: 0;
+		left: 30%;
+		transition: all 0.7s ease-in-out;
+	}
+	.item__container-right {
+		position: relative;
+		opacity: 0;
+		right: 30%;
+		transition: all 0.7s ease-in-out;
+	}
+	&:hover {
+		.item__container-left{
+			opacity: 1;
+			left: 0;
+
+		}
+		.item__container-right {
+			opacity: 1;
+			right: 0;
+		}
+		.link-see-more {
+			display: none;
+		}
+		.item__info {
+			opacity: 1;
+			transition: all 0.4s ease-in-out;
+		}
+	}
+	@media only screen and (max-width: $between) {
+		display: none;
+	}
+
+}
+
+.item__info {
+	text-align: center;
+	opacity: 0;
+	padding: 50px;
+	background-color: rgba($brown, .5);
+	width: 526px;
+	@include border-radius(5px);
+	@include  absolute-center();
+}
+
+.item__container-left{
+	width: 384px;
+	opacity: 0;
+	left: 50%;
+}
+
+.item__container-img {
+	width: 384px;
+	height: 598px;
+	@include border-radius(5px);
+	margin-bottom: 30px;
+}
+
+.item__container-center{
+	width: 804px;
+	margin: 0 30px;
+	position: relative;
+	z-index: 2;
+}
+
+.item__container-center-img {
+	height: 1226px;
+	width: auto;
+	@include border-radius(10px);
+}
+
+.item__container-right {
+	width: 384px;
+	right: 50%;
+	opacity: 0;
+}
+
+.item-slider {
+	@media only screen and (min-width: $lg) {
+		display: none;
+	}
+}
+
+.item-slider__img {
+	padding-right: 10px;
+}

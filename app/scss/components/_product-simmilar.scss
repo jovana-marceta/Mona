@@ -1,0 +1,15 @@
+.product-simmilar {
+	padding: 100px 0 100px 67px;
+	@media only screen and (max-width: $md) {
+		padding: 20px;
+	}
+	@media only screen and (max-width: $sm) {
+		display: none;
+	}
+}
+
+.product-simmilar__title {
+	&:after {
+		font-size: 151px;
+	}
+}

@@ -1,0 +1,139 @@
+.sidebar{
+	will-change: min-height;
+	width: 352px;
+	height: 100%;
+	will-change: min-height;
+	display: block;
+	&__heading {
+		font-size: 14px;
+		line-height: 20px;
+		color: $brown;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	&__logo {
+		margin-bottom: 60px;
+	}
+	&__links {
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #CFCFCF;
+		display: flex;
+		align-items: center;
+	}
+	&__pretext {
+		font-size: 10px;
+		line-height: 15px;
+		color: $brown;
+		margin-bottom: 10px;
+	}
+	&__title {
+		font-weight: bold;
+		margin-bottom: 20px;
+		color: $brown;
+	}
+	&-link {
+		color: $orange;
+		font-size: 10px;
+		line-height: 15px;
+		margin-right: 2px;
+	}
+	&-link--active {
+		color: $orange;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	&--active {
+		color: $orange;
+	}
+	@media only screen and (max-width: $md) {
+		display: none;
+	}
+}
+
+.showsidebar {
+	@media only screen and (max-width: $md) {
+		display: block;
+		.sidebar,
+		.sidebar__inner {
+			width: 100%;
+			padding: 50px 100px;
+		}
+	}
+	@media only screen and (max-width: $sm) {
+		display: block;
+		.sidebar,
+		.sidebar__inner {
+			width: 100%;
+			padding: 50px 100px;
+		}
+	}
+}
+
+.sidebar__inner{
+	transform: translate(0, 0); 
+	transform: translate3d(0, 0, 0);
+	will-change: position, transform;
+	background-color: $silver;
+	height: 100vh;
+	position: sticky;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding: 30px 55px 0 140px;
+}
+
+.sidebar-progress {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	list-style: none;
+	margin-bottom: 20px;
+	&::before {
+		display: inline-block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 2px;
+		width: 10px;
+		height: 100%;
+		border-left: 1px solid #CFCFCF;
+	}
+	&__item {
+		position: relative;
+		counter-increment: list;
+		padding-top: 0;
+		padding-left: 15px;
+		&:not(:last-child) {
+			padding-bottom: 10px;
+		}
+		&::before {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			left: -21px;
+			height: 100%;
+			width: 10px;
+		}
+		&::after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: -0;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $orange;
+		}
+	}
+	&__link {
+		color: $brown;
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
