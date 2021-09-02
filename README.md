@@ -1,6 +1,8 @@
 # Mona
 Multi-page website for fashion company. Created using HTML, CSS, JavaScript and jQuery with my Gulp starter.
 
+## [Website preview](https://nostalgic-darwin-2dff49.netlify.app/)
+
 ![alt text](https://i.imgur.com/drqMEAQ.jpg)
 
 ## Installation
